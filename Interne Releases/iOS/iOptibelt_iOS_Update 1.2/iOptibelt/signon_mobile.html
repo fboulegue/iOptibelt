@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+			<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta content="minimum-scale=1.0, width=device-width,maximum-scale=0.6667, user-scalable=no" name="viewport" />
+		<link href="style.css" rel="stylesheet" media="screen" type="text/css" />
+		<link href="style_products.css" rel="stylesheet" media="screen" type="text/css" />
+		<script src="functions.js" type="text/javascript"></script>
+		<meta content="optibelt mobile.de" name="keywords" />
+		<meta content="Development project" name="description" />
+		<meta name="format-detection" content="telephone=yes"/>
+	<title>iOptibelt</title>
+	<base target="Index">
+</head>
+
+<body> <!-- class="list" | class="applist" | class="musiclist" | class="ipodlist"-->
+	<div id="topbar"> <!-- class="black" f�r schwarz || class="transparent" f�r durchsichtig-->
+	<div id="title">optibelt online</div>
+<div id="leftnav">
+	<a href="home.html">zur&uuml;ck</a>
+</div>
+<div id="rightbutton">
+	<a href="home.html">
+		<img alt="home" src="home.png" style="margin-top:3px"/>
+	</a>
+</div>
+</div>
+
+<div id="content">
+	<form target="_self" name="formular" method="post" action="http://mobile.optibelt.com/ios/signon_mobile.php?L=de" onsubmit="javascript:scroll('-1000','-1000');return;">
+		<ul class="pageitem">
+		<li class="bigfield"><input name="username" placeholder="Benutzername" type="text" /></li>
+<li class="bigfield"><input name="password" placeholder="Passwort" type="password" /></li>
+<input name="login" type="hidden" value="1" />
+		</ul>
+		
+		<ul class="pageitem">
+		<li class="button">
+	<input name="anmelden" type="submit" value="Login"/>
+</li>
+		</ul>
+
+		<ul class="pageitem">
+			<li class ="textbox">
+		<p>Zur Ansicht Ihres Auftragsstatus melden Sie sich bitte an.<br>Sollten Sie noch keinen Account haben, registrieren Sie sich bitte auf der Optibelt Internetseite <a href="javascript:window.open('http://www.optibelt.com', '_blank','toolbar=no,status=no,directories=no,menuebar=no,location=no,resizable=1');" class="noeffect" target="_blank" style="color: #000000;">www.optibelt.com</a>.</p>
+	</li>
+		</ul>
+
+	</form>
+</div>
+</body>
+</html>

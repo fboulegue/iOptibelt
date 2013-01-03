@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+			<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta content="minimum-scale=1.0, width=device-width,maximum-scale=0.6667, user-scalable=no" name="viewport" />
+		<link href="style.css" rel="stylesheet" media="screen" type="text/css" />
+		<link href="style_products.css" rel="stylesheet" media="screen" type="text/css" />
+		<script src="functions.js" type="text/javascript"></script>
+        <script src="technical_service_2.js" type="text/javascript"></script>
+        <script type="text/javascript" src="signon/scripts/prototype-1.6.0.3.js"></script>
+		<meta content="optibelt mobile.de" name="keywords" />
+		<meta content="Development project" name="description" />
+		<meta name="format-detection" content="telephone=yes"/>
+<link rel="apple-touch-icon" href="optibelt_mediaplus_small.png"/>
+<link href="optibelt_mediaplus_small.png" rel="apple-touch-startup-image" />
+		<script type="text/javascript">
+			load_img = new Image();
+			load_img.src = "ladebalken.gif";
+		</script>
+
+	<title>iOptibelt</title>
+</head>
+
+<body> <!-- class="list" | class="applist" | class="musiclist" | class="ipodlist"-->
+	<div id="topbar"> <!-- class="black" f�r schwarz || class="transparent" f�r durchsichtig-->
+	<div id="title">Tech. Service</div>
+<div id="leftnav">
+	<a href="technical_service.html">zur&uuml;ck</a>
+</div>
+<div id="rightbutton">
+	<a href="home.html">
+		<img alt="home" src="home.png" style="margin-top:3px"/>
+	</a>
+</div>
+</div>
+	<div id="duobutton">
+	<div class="links">
+
+				<a href="technical_service_2_1.html" >Frequenz</a><a href="technical_service_2_2.html" id="pressed">Kraft</a>
+				</div>
+</div>
+
+<div id="content">
+		<ul class="pageitem">
+		<form target="_self" id="form_ttmini_feq" name="form_ttmini_feq" onsubmit="return false;">
+
+		<li class ="textbox">
+	<span class="header">TT Mini S Vorspannkraft</span> 
+		<p></p>
+	</li>
+		
+			
+		<li class="smallfield">
+			<span class="name" style="width:55%;">Gewicht k [g]</span>
+			<input name="input_k" id="input_k" placeholder="Eingabe" type="text" style="width:45%;" onblur="document.getElementById('input_k').style.backgroundColor = '#ffffff'" onkeyup="check_input(document.form_ttmini_feq.input_k.value,'input_k', 'Ung&uuml;ltige Eingabe');" />
+		</li>
+		<li class="smallfield">
+			<span class="name" style="width:55%;">Truml&auml;nge L [mm]</span>
+			<input name="input_l" id="input_l" placeholder="Eingabe" type="text" style="width:45%;" onblur="document.getElementById('input_l').style.backgroundColor = '#ffffff'" onkeyup="check_input(document.form_ttmini_feq.input_l.value,'input_l', 'Ung&uuml;ltige Eingabe');" />
+		</li>			
+		<li class="smallfield">
+			<span class="name" style="width:55%;">Frequenz f [Hz]</span>
+			<input name="input_f" id="input_f" placeholder="Eingabe" type="text" style="width:45%;" onblur="document.getElementById('input_f').style.backgroundColor = '#ffffff'" onkeyup="check_input(document.form_ttmini_feq.input_f.value,'input_f', 'Ung&uuml;ltige Eingabe');" />
+		</li>		
+		</ul>
+	
+		<ul class="pageitem">
+		  <li class="button">	
+			<input type="submit" value="Berechnen" onclick="calculate('de', 'newton');"/>
+		  </li>
+		  <li class="button" id="content_tt-mini">	
+			<span class="header" id="result" style="text-align:center; margin-top: 12px;">Trumkraft  T (N)</span>
+		  </li>
+		</form>
+		</ul>
+
+		<div id="ladebalken"></div>
+		
+		<!-- <ul class="pageitem">
+
+				</ul> -->
+</div>
+
+</div>
+</body>
+</html>
